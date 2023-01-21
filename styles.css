@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header nav {
+    background-color: pink;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 1rem;
+}
+
+header nav ul li a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 6rem);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+section#products {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+section#products h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+section#products ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section#products li {
+    width: 30%;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #f5f5f5;
+}
+
+section#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+section#about h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+
+header nav ul li .dropdown {
+    /* previous css */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+/*Products dropdown */
+header nav ul li:hover .dropdown {
+    display: block;
+}
+header nav ul li .dropdown{
+	display: none;
+  position: absolute;
+}
+
+
+header nav ul li .dropdown a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+header nav ul li .dropdown a:hover {
+    background-color: #f1f1f1;
+}
+
+/*Services dropdown */
+header nav ul li:hover .serv {
+    display: block;
+}
+
+/* Hide Dropdowns by Default */
+header nav ul ul .serv{
+	display: none;
+  position: absolute;
+}
+header nav ul li .serv{
+	display: none;
+  position: absolute;
+}
+
+header nav ul li .serv a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+header nav ul li .serv a:hover {
+    background-color: #f1f1f1;
+}
+
